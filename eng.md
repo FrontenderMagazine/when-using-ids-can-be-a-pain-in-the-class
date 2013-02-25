@@ -1,4 +1,4 @@
-When using IDs can be a pain in the class...
+When using IDs can be a pain in the class…
 ================================================================================
 
 
@@ -69,7 +69,7 @@ widget’s styling must always remain the same so this is not ideal whatsoever.
 
 We can work around this by [adding a new selector to the `.tweet a` rule][2]
 Or, even worse, we could add an `!important` to the relevant declaration.
-Shudder...
+Shudder…
 
 Now, you don’t need me to tell you that this is far from a nice solution, as
 soon as that widget gets put in the `#footer` we may well have to add yet
