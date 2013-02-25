@@ -21,17 +21,11 @@ element with `#the-id-you-chose`.
 IDs, as well as being non-reusable, carry quite a high specificity, take the
 following:
 
-    <p id="intro" class="excerpt">Lorem</p>
-
-    #intro{ color:blue; }
-    .excerpt{ color:green }
-    p{ color:red; }
-
 Even though we define `#intro` first--thus expecting it to be overwritten by
 subsequent matching selectors--it still takes precedence over any other rules.
 This is the IDs heightened specificity, and this is where you can come unstuck…
 
-## Reusability
+## Reusability ##
 
 One argument against using IDs is that they can’t be reused, but to my mind
 this is a weak argument. The whole point of using an ID is that it’s unique; if
@@ -43,7 +37,7 @@ Also, some things just _can’t_ be reused. Some designs would be wholly
 impossible to have, say, two content areas in. You couldn’t reuse that even if
 you wanted to.
 
-## Wild card
+## Wild card ##
 
 That is _wild card_ meaning a person or thing whose influence is unpredictable
 or whose qualities are uncertain and not to be confused with the CSS _wildcard_ 
@@ -66,7 +60,7 @@ Let’s for example say they want to kick things off with having the widget in
 the header and also in-page, at the bottom of an article. The Twitter widget’s
 styling must remain consistent.
 
-So, let’s look at some [example code](http://jsfiddle.net/csswizardry/gTZGq/1/).
+So, let’s look at some [example code][1].
 
 Here we can see that we have a small specificity problem, the `#header a` rule
 has a lot higher specificity than `.tweet a` and therefore the links in the
@@ -95,10 +89,10 @@ specificity war.
 I did mention that you can add a class as well as the ID or remove the ID
 completely. It depends…
 
-### Remove IDs completely?
+### Remove IDs completely? ###
 
 We’ve covered where IDs can trip us up and be but they serve a purpose other
-than style-hooks; they can be used as [fragment identifiers](http://csswizardry.com/2011/06/namespacing-fragment-identifiers/)
+than style-hooks; they can be used as [fragment identifiers][2]
 for marking landmarks in the page.
 
 I’m sure you’ve seen ‘Skip to navigation’ or ‘Jump to content’ links in pages,
@@ -110,7 +104,7 @@ You know your context better than I, or anyone else does, so don’t let anyone
 else tell you what to do. If you want to keep an ID for completeness or for
 fragment identifiers then do, it’s totally your call.
 
-## Final word
+## Final word ##
 
 So yeah, IDs aren’t evil, they’re perfectly valid and a blanket ban on them is
 stupid. Use your own knowledge and context of the project to use the most
@@ -119,3 +113,8 @@ suitable and sensible solution.
 Don’t stop using IDs, just be aware of where they can cause you headaches and
 know where to sensibly circumvent them. Anyone telling you not to use them at
 all is not wrong, but they’re definitely not right…
+
+----
+
+ [1]: http://jsfiddle.net/csswizardry/gTZGq/1/ "Specificty nightmare"
+ [2]: http://csswizardry.com/2011/06/namespacing-fragment-identifiers/ "Namespacing fragment identifiers"
