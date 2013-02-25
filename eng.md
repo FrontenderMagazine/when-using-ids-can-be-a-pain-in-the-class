@@ -67,7 +67,7 @@ has a lot higher specificity than `.tweet a` and therefore the links in the
 widget adopt the header’s (unreadable) colour. Remember that the Twitter
 widget’s styling must always remain the same so this is not ideal whatsoever.
 
-We can work around this by [adding a new selector to the `.tweet a` rule](http://jsfiddle.net/csswizardry/gTZGq/2/)
+We can work around this by [adding a new selector to the `.tweet a` rule][2]
 Or, even worse, we could add an `!important` to the relevant declaration.
 Shudder...
 
@@ -80,7 +80,7 @@ This is where using IDs can be a pain for you, where a specificity trump is
 introduced.
 
 A better fix: add a class instead of (or as well as) the ID on that
-header `div`, thus: [http://jsfiddle.net/csswizardry/gTZGq/3/](http://jsfiddle.net/csswizardry/gTZGq/3/)
+header `div`, thus: [http://jsfiddle.net/csswizardry/gTZGq/3/][3]
 
 That now brings the specificity gap way down to, well, zero. Removing the ID
 means that you now don’t have to fight yourself out of a self-induced
@@ -92,7 +92,7 @@ completely. It depends…
 ### Remove IDs completely? ###
 
 We’ve covered where IDs can trip us up and be but they serve a purpose other
-than style-hooks; they can be used as [fragment identifiers][2]
+than style-hooks; they can be used as [fragment identifiers][4]
 for marking landmarks in the page.
 
 I’m sure you’ve seen ‘Skip to navigation’ or ‘Jump to content’ links in pages,
@@ -117,4 +117,6 @@ all is not wrong, but they’re definitely not right…
 ----
 
  [1]: http://jsfiddle.net/csswizardry/gTZGq/1/ "Specificty nightmare"
- [2]: http://csswizardry.com/2011/06/namespacing-fragment-identifiers/ "Namespacing fragment identifiers"
+ [2]: http://jsfiddle.net/csswizardry/gTZGq/2/ "Specificty nightmare #2"
+ [3]: http://jsfiddle.net/csswizardry/gTZGq/3/ "Specificty nightmare #3"
+ [4]: http://csswizardry.com/2011/06/namespacing-fragment-identifiers/ "Namespacing fragment identifiers"
