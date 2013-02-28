@@ -40,7 +40,7 @@ you wanted to.
 ## Wild card ##
 
 That is _wild card_ meaning a person or thing whose influence is unpredictable
-or whose qualities are uncertain and not to be confused with the CSS _wildcard_ 
+or whose qualities are uncertain and not to be confused with the CSS _wildcard_
 selector (`*{}`).
 
 One of the main and, in my opinion, most valid arguments against using IDs is
